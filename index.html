@@ -4,42 +4,42 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
         <title>Take Better Notes</title>
     </head>
-    <body>
-        <main>
-            <header>
-                <h1 class="header">Take Better Notes</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Docs</li>
+    <body class="grid">
+        <header class="header">
+            <h1 class="center">Take Better Notes</h1>
+            <nav>
+                <ul class="link">
+                    <li class="pad">About</li>
+                    <li class="pad">Docs</li>
                 </ul>
-            </header>
-            <section class="grid">
-                <button class="blueb">
-                    New Note
-                </button>
-                <button id="purpleb">
-                    Dark Mode
-                </button>
-                <textarea>This is a placeholder</textarea>
-                <button class="blueb">
-                    Save
-                </button>
-                <button id="redb">
-                    Cancel
-                </button>
-                <aside>
-                    <h2>My Notes</h2>
-                </aside>
-            </section>
-        </main>
-        <footer>
+            </nav>
+        </header>
+        <section class="content">
+            <div class="top">
+                <button class="blueb">New Note</button>
+                <button id="dark">Dark Theme</button>
+            </div>
+            <textarea placeholder="This is a placeholder"></textarea>
+            <div class="bottom">
+                <button class="blueb">Save</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </section>
+        <div class="notes">
+            <h1 class="center">My Notes</h1>
+            <ul class="note">
+                <li>note one</li>
+                <li>note two</li>
+            </ul>
+        </div>
+        <footer class="center">
             <h3>Keep in Touch</h3>
             <div>
-                <a href = ""><img class ="img" src="images/linkedin.png" alt="linkedin"></a>
-                <a href = ""><img class ="img" src="images/internet.png" alt="internet"></a>
+                <a href = "https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png"><img class ="img" src="images/linkedin.png" alt="linkedin"></a>
+                <a href = "https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-02-512.png"><img class ="img" src="images/internet.png" alt="internet"></a>
             </div>
         </footer>
     </body>
