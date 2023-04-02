@@ -1,6 +1,10 @@
 const buttonRef = document.querySelector("#dark")
 let box = document.querySelector(".textbox")
 let text = document.querySelector("textarea")
+let notesArray = [
+    {title:"note one", body:"this is my first note"},
+    {title:"note two", body:"this is my second note"}
+];
 
 function changeText() {
     if (buttonRef.textContent === "Dark Theme"){
