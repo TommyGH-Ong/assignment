@@ -55,4 +55,3 @@ function noteDisplay(event){
 }
 
 noteList.addEventListener("click", noteDisplay);
-
