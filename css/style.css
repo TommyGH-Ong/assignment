@@ -92,6 +92,17 @@ textarea {
     list-style-type: square;
 }
 
+.darkerMode {
+    background-color: rgb(26, 26, 26);
+    color:#97d7ff;
+}
+
+.darkMode {
+    background-color: rgb(35, 35, 35);
+    color: #97d7ff;
+
+}
+
 @media (max-width:600px) {
     .grid {
         grid-template-columns: 1fr;

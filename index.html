@@ -6,6 +6,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
         <title>Take Better Notes</title>
+        <script src="js/script.js" defer></script>
     </head>
     <body class="grid">
         <header class="header">
@@ -20,7 +21,7 @@
         <section class="content">
             <div class="top">
                 <button class="blueb">New Note</button>
-                <button id="dark">Dark Theme</button>
+                <button id="dark" onclick="lightsOff(); changeText()">Dark Theme</button>
             </div>
             <textarea placeholder="This is a placeholder"></textarea>
             <div class="bottom">
