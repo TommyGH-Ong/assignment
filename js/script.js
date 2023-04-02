@@ -1,6 +1,6 @@
 const buttonRef = document.querySelector("#dark")
 let box = document.querySelector(".textbox")
-let text = document.querySelector("textarea")
+let field = document.querySelector("textarea")
 let notesArray = [
     {title:"note one", body:"this is my first note"},
     {title:"note two", body:"this is my second note"}
@@ -30,6 +30,18 @@ function showButtons() {
     if (box.style.display === "none") {
         box.style.display = "block";
     }else{
-        text.value=""
+        field.value=""
     }
+}
+
+function saveNote(){
+    const noteText = field.value;
+    const noteTitle = prompt("Please enter a title");
+    const newNote = {title: noteTitle, body: noteText};
+    notesArray.push(newNote);
+    const noteList = document.querySelector(".note");
+    const listItem = document.createElement("li");
+    const listItemText = document.createTextNode(noteTitle);
+    listItem.appendChild(listItemText);
+    noteList.appendChild(listItem)
 }
