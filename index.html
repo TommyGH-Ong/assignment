@@ -20,13 +20,15 @@
         </header>
         <section class="content">
             <div class="top">
-                <button class="blueb">New Note</button>
+                <button class="blueb" onclick="showButtons()">New Note</button>
                 <button id="dark" onclick="lightsOff(); changeText()">Dark Theme</button>
             </div>
-            <textarea placeholder="This is a placeholder"></textarea>
-            <div class="bottom">
-                <button class="blueb">Save</button>
-                <button id="cancel">Cancel</button>
+            <div class="textbox">
+                <textarea placeholder="This is a placeholder"></textarea>
+                <div class="bottom">
+                    <button class="blueb">Save</button>
+                    <button id="cancel" onclick="hideButtons()">Cancel</button>
+                </div>
             </div>
         </section>
         <div class="notes">
